@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="thử tài cào phím với Typing Gaming" content="width=device-width, initial-scale=1.0">
+    <title>Thử tài cào phím với Typing Gaming</title>
+    <link rel="shortcut icon" href="https://techmaster.vn/resources/image/hoclacoviec.jpg" type="image/x-icon">
+</head>
+<body>
+    <h1>Thử tài cào phím với Typing Gaming <br>(phần 1) </br></h1>
+         <p>
+          24 tháng 05 , 2021    
+         </p>    
+         <a href="https://techmaster.vn/posts?keyword=&category=79" target="_blank">Lập trình web</a>
+         <a href="https://techmaster.vn/posts?keyword=&category=568" target="_blank">Javascript</a>
+         <p>
+             <i>Phận làm trai, gõ phím bình thiên hạ 
+                 <br> <br>
+                 Chí anh hùng, click chuột định giang sơn
+             </i>
+         </p>
+         <p>
+             Để phục vụ cho nhu cầu cào phím của anh em,
+            thì bài viết này chúng ta sẽ cùng nhau làm thử một ứng dụng hay nói <br>mĩ miều hơn là một game để luyện tập gõ phím 😁.
+              Mình sẽ gọi nôm na là Typing Game cho nó Tây chút chứ không<br>có gì đâu.
+              <br><br>
+              Bây giờ thì cùng bắt đầu thôi nào 😅
+             <hr>
+         </p>
+         <p>
+             Đây là giao diện game ban đầu của chúng ta </p>
+             <img src="https://techmaster.vn/media/static/9479/c2lig1c51codum1dseug" alt="Ảnh">
+         
+         <p>
+           <blockquote><i>Phần sources code đầu game mình để ở đây nhé. Các bạn có thể tham khảo </i> <br>
+            <a href="https://github.com/buihien0109/typing-game-javascript/tree/master/typing-start)" target="_blank" draggable="true">
+            (https://github.com/buihien0109/typing-game-javascript/tree/master/typing-start)</a></blockquote> 
+         </p>
+         <p>
+             Khi bắt đầu game thì mặc định mình sẽ để ngôn ngữ là tiếng việt, chúng ta có thể chuyển qua lại giữa tiếng anh và 
+             <br>tiếng việt nếu thích
+             <br><br>
+             OK, bắt tay vào code thôi 😋
+             <br><br><br><br>
+             </p>
+          <div style="background-color: black;">
+            <span style="color: saddlebrown;">// Khai báo biến</span>
+           <br> <span style="color: indianred;"let>let</span>
+           <span style="color: ivory;">string_vietnamese</span>
+           <span style="color: chocolate;">=</span>
+       <p style="color: yellowgreen;"> 'Tôi trả tiền làm tượng nhưng cũng không hài lòng Anh Tú Thứ năm Chủ khu du lịch An sapa Sa Pa Lào Cai nghĩ cộng đồng mạng nên có cái nhìn chính xác hơn về sự cố liên quan đến tượng Nữ thần Tự do vừa qua Chia sẻ với Zing ông Nguyễn Ngọc Đông chủ khu An sapa 
+        thừa nhận rất mệt mỏi trong những ngày qua khi trở thành nạn nhân của cộng đồng mạng'</p>
+           <br>
+           <span style="color: indianred;">let</span>
+           <span style="color: white;">string_english</span>
+           <span style="color: chocolate;">=</span>
+           <p style="color: yellowgreen;" > 
+            <b>    
+            'This shows us that the global nature needs our lives in the planet It involved all of us even if in many ways different and unequivocal And in this way it teaches us even more on what we have to do to create a just planet fair and safe from an environmental point of view In brief the Covid pandemic has taught us this interdependence this sharing together';
+           </b>
+        </p>
+        <br>
+        <span style="color: indianred;">let</span>
+        <span style="color: white;"> language</span>
+        <span style="color: chocolate;">=</span>
+        <span style="color: turquoise;">{</span>
+            <p> 
+                <i>
+              <span style="color: palevioletred;">1</span>
+              <span style="color: peru;">:</span> <span style="color: ivory;"string_vietnamese>string_vietnamese</span>
+              <span style="color: turquoise;">,</span>
+              <br>
+              <span style="color: palevioletred;">2</span>
+              <span style="color: peru;">:</span> <span style="color: ivory;">string_english</span>
+              <span style="color: turquoise;">,</span>
+              </i>
+            </p>
+            </div>
+            <p> <b>Danh sách ngôn ngữ </b> </p>
+            <ol>
+                <li>string_english</li>
+                <li>string_vietnamese</li>
+            </ol>
+           <p>
+               Bởi vì chúng ta có thể chọn qua lại giữa 2 ngôn ngữ tiếng anh và tiếng việt.
+               Nên trong code phần khai báo biến mình có định nghĩa ra 2 biến
+               <br>
+              <b>&#9899 string_vietnamese</b> : Chứa nội dung tiếng việt
+              <br><br>
+              <b>&#9899 string_english</b> : Chứa nội dung tiếng anh
+              <br><br>
+              và object <strong>language</strong> giúp chúng ta có thể lấy ra nội dung tương ứng khi đổi ngôn ngữ nhé. Ở đây các key "1", "2" của 
+             <br> object <strong>language</strong> chính là value của ô select (các bạn có thể quan sát trong mã HTML nhé).
+               Dựa vào value của ô <br> select chúng ta có thể lấy ra ngôn ngữ tương ứng ở trong object language
+               <br>
+             <img src="https://techmaster.vn/media/static/9479/c2likms51codum1dsev0" alt="ảnh" sizes="200">
+    <h2><b>Hiển thị các từ</b></h2>
+            <div style="background-color: black;">
+            <span style="color: lightcoral;">const</span> <span>
+                <span style="color: white;">languageE1</span>
+                <span style="color: coral;">=</span>
+                <span style="color: white;"> document</span> <span style="color: turquoise;">.</span>
+                <span style="color: chocolate;">querySelector</span>
+            
+            
+            </div>
+
+        
+           </p>
+           
+               
+    </body>
+            
+
+
+
+            
